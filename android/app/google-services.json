@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "658699632475",
+    "project_id": "truyen-hay-a6748",
+    "storage_bucket": "truyen-hay-a6748.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658699632475:android:853d37b54315885fb9e47e",
+        "android_client_info": {
+          "package_name": "vn.funnyapp.apptruyen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658699632475-20scunkru6o49448ieph682unburc2ma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.funnyapp.apptruyen",
+            "certificate_hash": "e85cd52edf24edb13645f5137007b494ccfc4121"
+          }
+        },
+        {
+          "client_id": "658699632475-bbdvmr312bvfnclcttsua4d18a5sunkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.funnyapp.apptruyen",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "658699632475-ecfi4vdcbe3rgjpgm39vgtijv0843t1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.funnyapp.apptruyen",
+            "certificate_hash": "0d49fd2cd3b41efe607215e4a1d09a35b732c7a9"
+          }
+        },
+        {
+          "client_id": "658699632475-ndoct066ejh813d6i7qqe0m2bqj7mp8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.funnyapp.apptruyen",
+            "certificate_hash": "9d9b33ca56abba38f6a62f65de03bc37b33aecbe"
+          }
+        },
+        {
+          "client_id": "658699632475-n68pir5c03p5jpegpn97ksli8puerlgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFoLwxi1HU31z59cxWOkwAWFW3asMNjMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658699632475-n68pir5c03p5jpegpn97ksli8puerlgt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "658699632475-dtfi5ctsj6l2b28a0j6tpf3htde8hdlj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.funnyapp.apptruyen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
