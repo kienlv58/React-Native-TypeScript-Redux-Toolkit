@@ -20,23 +20,18 @@ import appConfigureStore from './src/redux/store';
 import { palette } from './src/theme';
 
 const { store, persistor } = appConfigureStore();
-if (__DEV__) {
-    import('./ReactotronConfig').then(() =>
-        console.log('Reactotron Configured'),
-    );
-}
 
 const App = () => {
     Settings.initializeSDK();
-    useEffect(() => {
-        GoogleSignin.configure({
-            webClientId:
-                '658699632475-n68pir5c03p5jpegpn97ksli8puerlgt.apps.googleusercontent.com', // client ID of type WEB for your server(needed to verify user ID and offline access)
-            offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
-            forceCodeForRefreshToken: true, // [Android] related to `serverAuthCode`, read the docs link below *.
-            accountName: '', // [Android] specifies an account name on the device that should be used
-        });
-    }, []);
+    // useEffect(() => {
+    //     GoogleSignin.configure({
+    //         webClientId:
+    //             '658699632475-n68pir5c03p5jpegpn97ksli8puerlgt.apps.googleusercontent.com', // client ID of type WEB for your server(needed to verify user ID and offline access)
+    //         offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
+    //         forceCodeForRefreshToken: true, // [Android] related to `serverAuthCode`, read the docs link below *.
+    //         accountName: '', // [Android] specifies an account name on the device that should be used
+    //     });
+    // }, []);
 
     return (
         <Provider store={store}>

@@ -11,7 +11,7 @@ import {
     REGISTER,
 } from 'redux-persist';
 import AsyncStorage from '@react-native-community/async-storage';
-
+import reactotron from '../../../ReactotronConfig';
 import rootReducer from '../slices/rootReducer';
 
 export default function appConfigureStore() {
@@ -31,6 +31,10 @@ export default function appConfigureStore() {
     }
 
     const persistedReducer = persistReducer(persistConfig, rootReducer);
+    const enhancers = [];
+    if (reactotron && reactotron.createEnhancer !== undefined) {
+        enhancers.push(reactotron?.createEnhancer());
+    }
     const store = configureStore({
         reducer: persistedReducer,
         middleware: getDefaultMiddleware({
@@ -44,7 +48,9 @@ export default function appConfigureStore() {
                     REGISTER,
                 ],
             },
-        }),
+        }).concat(middlewares),
+        enhancers,
+        devTools: process.env.NODE_ENV !== 'production',
     });
     const persistor = persistStore(store);
 
