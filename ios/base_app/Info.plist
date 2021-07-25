@@ -45,8 +45,6 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>CodePushDeploymentKey</key>
-	<string>cdIqxXTLylyAleyRJ4ODmCFmNmiDlg0UqsD29</string>
 	<key>FacebookAppID</key>
 	<string>4126347194091378</string>
 	<key>FacebookDisplayName</key>
@@ -117,6 +115,8 @@
 		<string>Cardo-Regular.ttf</string>
 		<string>Karla-ExtraLight.ttf</string>
 		<string>Lora-Regular.ttf</string>
+		<string>BarlowCondensed-Regular.ttf</string>
+		<string>ProductSans-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

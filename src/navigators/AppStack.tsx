@@ -36,7 +36,7 @@ const AppTab = () => (
     <Tab.Navigator
         tabBarOptions={{
             tabStyle: {
-                backgroundColor: palette.primary2,
+                backgroundColor: palette.primary,
                 elevation: 0, // for Android
                 shadowOffset: {
                     width: 0,

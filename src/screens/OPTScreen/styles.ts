@@ -4,17 +4,10 @@ const styles = StyleSheet.create({
     container: {
         padding: 24,
     },
-    spaceForm: {
-        marginBottom: 16,
-    },
     spaceButton: {
-        marginTop: 90,
-    },
-    spaceButton2: {
-        marginTop: 30,
+        marginTop: 34,
     },
     spaceHeader: {
-        marginBottom: 54,
         marginTop: 80,
     },
 });

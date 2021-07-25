@@ -60,7 +60,8 @@
       "components/*": ["./components/*"],
       "theme": ["./theme"],
       "images/*": ["./images/*"],
-      "utils": ["./utils"]
+      "utils": ["./utils"],
+      "theme/*": ["./theme/*"]
     }
     /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
     // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */

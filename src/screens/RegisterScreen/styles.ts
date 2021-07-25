@@ -8,9 +8,6 @@ const styles = StyleSheet.create({
         marginBottom: 16,
     },
     spaceButton: {
-        marginTop: 90,
-    },
-    spaceButton2: {
         marginTop: 30,
     },
     spaceHeader: {

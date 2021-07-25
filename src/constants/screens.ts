@@ -1,9 +1,13 @@
 import { ParamListBase } from '@react-navigation/native';
 import { BookType } from './enums';
 
-export const NAV_BAR_SIZE = 46;
+export const NAV_BAR_SIZE = 44;
 
-export const LOGIN_SCREEN = 'LoginScreen';
+// export const LOGIN_SCREEN = 'LoginScreen';
+// export const CREATE_PASS_SCREEN = 'CreateNewPassScreen';
+// export const REGISTER_SCREEN = 'RegisterScreen';
+// export const OTP_SCREEN = 'OPTScreen';
+// export const FORGET_PASSWORD_SCREEN = 'ForgetPasswordScreen';
 export const MAIN_SCREEN = 'MainScreen';
 
 export const APP_STACK = 'AppStack';
@@ -12,6 +16,11 @@ export const TAB_SCREEN = 'TAB_SCREEN';
 
 export enum ScreenMap {
     LIST_BOOK_SCREEN = 'LIST_BOOK_SCREEN',
+    LOGIN_SCREEN = 'LOGIN_SCREEN',
+    CREATE_PASS_SCREEN = 'CREATE_PASS_SCREEN',
+    REGISTER_SCREEN = 'REGISTER_SCREEN',
+    OTP_SCREEN = 'OTP_SCREEN',
+    FORGET_PASSWORD_SCREEN = 'FORGET_PASSWORD_SCREEN',
 }
 
 export const TAB_NAME = {
@@ -26,4 +35,6 @@ export interface ScreenParams extends ParamListBase {
         title: string;
         categoryId?: number;
     };
+    [ScreenMap.REGISTER_SCREEN]: { id?: string };
+    [ScreenMap.LOGIN_SCREEN]: { id?: string };
 }

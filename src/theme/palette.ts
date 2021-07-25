@@ -1,5 +1,8 @@
 export const palette = {
-    black: '#1d1d1d',
+    title: '#E8C27F',
+    label: '#9FA0A8',
+    back: '#9FA1A9',
+    black: '#1D1E1F',
     white: '#ffffff',
     offWhite: '#e6e6e6',
     orange: '#FBA928',
@@ -8,7 +11,7 @@ export const palette = {
     lightGrey: '#939AA4',
     lighterGrey: '#CDD4DA',
     angry: '#dd3333',
-    primary: '#7763F6',
+    primary: '#27292A',
     primary2: '#1D212B',
     grey2: '#37474f',
     tabInactive: '#CFD0D2',

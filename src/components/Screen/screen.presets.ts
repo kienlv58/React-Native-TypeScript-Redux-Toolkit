@@ -15,7 +15,7 @@ export const offsets = {
 export type KeyboardOffsets = typeof offsets;
 
 const outer1: ViewStyle = {
-    backgroundColor: palette.primary2,
+    backgroundColor: palette.primary,
     flex: 1,
     height: '100%',
 };
@@ -27,7 +27,7 @@ const inner1: ViewStyle = {
 };
 
 const outer2: ViewStyle = {
-    backgroundColor: palette.primary2,
+    backgroundColor: palette.primary,
     flex: 1,
     height: '100%',
 };

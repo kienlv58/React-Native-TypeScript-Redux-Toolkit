@@ -33,4 +33,6 @@ export const typography = {
     lora: 'Lora-Regular',
     cardo: 'Cardo-Regular',
     karla: 'Karla-ExtraLight',
+    barlow: 'BarlowCondensed-Regular',
+    googleSans: 'ProductSans-Regular',
 };
