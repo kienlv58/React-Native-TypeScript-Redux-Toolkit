@@ -35,7 +35,11 @@ const LoginScreen = () => {
             </Text>
             <Input label="Tài khoản" style={styles.spaceForm} />
             <Input label="Mật khẩu" secureTextEntry style={styles.spaceForm} />
-            <BaseButton title="Đăng nhập" style={styles.spaceButton} />
+            <BaseButton
+                title="Đăng nhập"
+                style={styles.spaceButton}
+                onPress={loginRequest}
+            />
             <ButtonText
                 title="Đăng ký"
                 style={styles.spaceButton2}

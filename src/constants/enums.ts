@@ -37,3 +37,10 @@ export enum LOGIN_TYPE {
     GOOGLE = 'GOOGLE',
     APPLE = 'APPLE',
 }
+
+export enum ORDER_TYPE {
+    CAT_TOC_NAM,
+    CAT_TOC_TRE_EM,
+    CAO_MAT,
+    CAT_TOC_NU,
+}

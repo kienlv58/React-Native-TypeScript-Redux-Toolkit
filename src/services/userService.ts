@@ -1,6 +1,6 @@
 class UserService {
     async getUser(userName: string) {
-        // TODO
+        return { name: 'kien', age: 24 };
     }
 }
 

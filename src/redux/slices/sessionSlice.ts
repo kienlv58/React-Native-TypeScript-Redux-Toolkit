@@ -44,13 +44,11 @@ export const fetchUserInfo =
             dispatch(showLoading({ isLoading: true }));
             const data = await UserService.getUser(userName);
             callback?.onSuccess?.(data);
-            // dispatch(setCurrentUser(data));
+            dispatch(setCurrentUser(data));
         } catch (e) {
             console.log('error', e);
         } finally {
-            setTimeout(() => {
-                dispatch(showLoading({ isLoading: false }));
-            }, 2000);
+            dispatch(showLoading({ isLoading: false }));
         }
     };
 

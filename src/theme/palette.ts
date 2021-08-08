@@ -23,4 +23,5 @@ export const palette = {
     yellow: '#ffe268',
     activeNext: '#6e6f7d',
     inActiveNext: '#c0c0c6',
+    bgActive: '#3A3832',
 };

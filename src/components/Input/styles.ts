@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { palette } from 'theme';
+import { palette, typography } from 'theme';
 
 const styles = StyleSheet.create({
     input: {
@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
         height: 56,
         marginTop: 8,
         paddingHorizontal: 16,
+        fontFamily: typography.googleSans,
     },
     label: {
         fontSize: 16,

@@ -1,5 +1,5 @@
 import { ParamListBase } from '@react-navigation/native';
-import { BookType } from './enums';
+import { BookType, ORDER_TYPE } from './enums';
 
 export const NAV_BAR_SIZE = 44;
 
@@ -20,6 +20,10 @@ export enum ScreenMap {
     CREATE_PASS_SCREEN = 'CREATE_PASS_SCREEN',
     REGISTER_SCREEN = 'REGISTER_SCREEN',
     OTP_SCREEN = 'OTP_SCREEN',
+    USER_INFO_SCREEN = 'USER_INFO_SCREEN',
+    HOME_SCREEN = 'HOME_SCREEN',
+    ORDER_SCREEN = 'ORDER_SCREEN',
+    WHO_ARE_YOU_SCREEN = 'WHO_ARE_YOU_SCREEN',
     FORGET_PASSWORD_SCREEN = 'FORGET_PASSWORD_SCREEN',
 }
 
@@ -37,4 +41,6 @@ export interface ScreenParams extends ParamListBase {
     };
     [ScreenMap.REGISTER_SCREEN]: { id?: string };
     [ScreenMap.LOGIN_SCREEN]: { id?: string };
+    [ScreenMap.USER_INFO_SCREEN]: { type: number };
+    [ScreenMap.ORDER_SCREEN]: { orderType: ORDER_TYPE };
 }
