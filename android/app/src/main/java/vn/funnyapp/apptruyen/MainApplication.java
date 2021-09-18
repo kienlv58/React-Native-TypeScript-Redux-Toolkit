@@ -6,8 +6,6 @@ import android.content.Context;
 import vn.funnyapp.apptruyen.BuildConfig;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
-import com.microsoft.codepush.react.CodePush;
-import com.microsoft.codepush.react.CodePush;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
@@ -41,10 +39,6 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
         protected String getJSMainModuleName() {
           return "index";
         }
-          @Override
-          protected String getJSBundleFile() {
-              return CodePush.getJSBundleFile();
-          }
       };
 
   @Override

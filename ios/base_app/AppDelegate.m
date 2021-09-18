@@ -1,12 +1,10 @@
 #import "AppDelegate.h"
 #import <Firebase.h>
-#import <CodePush/CodePush.h>
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import "RNSplashScreen.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
@@ -15,6 +13,10 @@
 #import <FlipperKitNetworkPlugin/FlipperKitNetworkPlugin.h>
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
+
+//#if RCT_DEV
+//#import <React/RCTDevLoadingView.h>
+//#endif
 
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
@@ -38,8 +40,14 @@ static void InitializeFlipper(UIApplication *application) {
   if ([FIRApp defaultApp] == nil) {
       [FIRApp configure];
     }
-  [[FBSDKApplicationDelegate sharedInstance] application:application
-                             didFinishLaunchingWithOptions:launchOptions];
+  
+//  [ReactNativeNavigation bootstrapWithDelegate:self launchOptions:launchOptions];
+//
+//  // Add this
+//  #if RCT_DEV
+//    [[ReactNativeNavigation getBridge] moduleForClass:[RCTDevLoadingView class]];
+//  #endif
+
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
@@ -53,9 +61,9 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-//  [FBSDKApplicationDelegate initializeSDK:launchOptions];
-//  [[FBSDKApplicationDelegate sharedInstance] application:application
-//                             didFinishLaunchingWithOptions:launchOptions];
+  
+  
+  
   [RNSplashScreen show];
   return YES;
 }
@@ -65,19 +73,9 @@ static void InitializeFlipper(UIApplication *application) {
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 #else
-//  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-  return [CodePush bundleURL];
+  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
 }
 
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-            options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
-{
-  [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                 openURL:url
-                                                 options:options];
-  return YES;
-}
 
 @end

@@ -33,6 +33,7 @@ local.properties
 *.aar
 *.ap_
 *.aab
+*.hprof
 
 # Visual Studio Code
 #
